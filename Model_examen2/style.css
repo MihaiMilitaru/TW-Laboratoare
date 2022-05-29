@@ -1,0 +1,99 @@
+
+@media screen and (min-width:800px) {
+    body{
+        display: flex;
+       justify-content: center;
+    }
+    #container{
+        display: flex;
+        flex-direction: row;
+       width: 500px;
+       height: 500px;
+
+       background-color: green;
+       border: 1px solid black;
+       
+    }
+
+    .patrat{
+        width: 100px;
+        height: 100%;
+    }
+
+    .patrat:nth-child(even){
+        border:1px solid red;
+        
+    }
+
+    .patrat:nth-child(odd){
+        border:1px solid blue;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    @keyframes bk {
+        50%{
+            background-color: yellow;
+        }
+
+        100%{
+            background-color: white;
+        }
+    }
+    body{
+        animation-name: bk;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+
+    
+    #container{
+       display: flex;
+       flex-direction: column;
+       width: 50vw;
+       background-color: green;
+
+       
+    }
+
+    .patrat{
+        width: 100%;
+    }
+/*
+@media screen and (max-width:800px) {
+    body{
+        animation-name: colorb;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+
+    }
+    @keyframes colorb {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: yellow;
+    }
+    }
+    #container{
+        width:50vw;
+        height: 500px;
+        background-color: green;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .partat:nth-child(even){
+        width: 100%;
+        border: 1px solid red;
+    
+    }
+    .partat:nth-child(odd){
+        width: 100%;
+        border: 1px solid blue;
+    }
+}*/
+}
